@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #e1e1e1;
+    max-width: 1300px;
+    margin: auto;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading Styles */
+h1 {
+    padding-top: .5em;
+    text-align: center;
+}
+
+/* Styles for challenge start here */
+.card {
+    width: 20em;
+    padding: 1em;
+}
+
+.card-image {
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+.card-content p {
+    background-color: white;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles for Extra Small (XS) screens */
+@media (max-width: 575.5px) {
+    /* CSS rules for XS screens */
+    .card {
+        flex-basis: 100%;
+    }
+}
+  
+/* Styles for Small (SM) screens */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* CSS rules for SM screens */
+    .card {
+        flex-basis: 50%;
+    }
+}
+
+/* Styles for Medium (MD) screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for MD screens */
+    .card {
+        flex-basis: 33.3%;
+    }
+}
+
+/* Styles for Large (LG) screens */
+@media (min-width: 1200px) {
+    /* CSS rules for LG screens */
+    .card {
+        flex-basis: 25%;
+    }
+}
